@@ -1,5 +1,32 @@
 # temperature
+PSUEDO-CODE
+
+```
+textbox for temperature
+calculate button
+
+output:
+In 
+
+User types 
+Submits with calculate button
+    Get value of temperature textbox
+    Multiply by 
+    if temperature > 
+        hot
+    else
+       cold
+    Display temperature with text
+```
+
+
+
+
+```
+
  Temperature lab
+
+
 
 1. For the temperature lab we’re going to create a temperature converter that:
     * Uses a form that:
@@ -13,24 +40,5 @@
 
 
 
-# Dog Age
-PSUEDO-CODE
 
-```
-textbox for years
-calculate button
-
-output:
-In human years your dog is {age} years old and is considered a {puppy/adult}
-
-User types age
-Submits with calculate button
-    Get value of age textbox
-    Multiply by 7
-    if age > 18
-        adult
-    else
-        pup
-    Display age with text
-```
 

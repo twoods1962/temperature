@@ -1,13 +1,16 @@
-function toHumanYears() {
-    let dogAge = document.getElementById("dogYearsInput").value;
-    let humanAge = dogAge * 7;
-    let lifeStage;
-    if (humanAge > 18) {
-        lifeStage = "an adult";
+function selectUnit() {
+    let outputTemp;
+    let isChecked = document.getElementById("tempF").checked;
+    let tempInput = document.getElementById("tempInput").value;
+    if (isChecked == true) {
+        // C = (5/9) * (F-32)
+
+        outputTemp = (5/9) * (tempInput-32);
     }
     else {
-        lifeStage = "a pup";
+        // (0 C x 9/5) + 32 = 32 F
+
+        outputTemp = (tempInput*(9/5)) + 32;
     }
-    let outputString = "In human years your dog is " + humanAge + " years old and is considered " + lifeStage + ".";
-    document.getElementById("output").innerHTML = outputString;
+    document.getElementById("tempOutput").value = outputTemp;
 }
